@@ -6,3 +6,9 @@ DaneZPlikuConsole/obj/Debug/
 *.ide-shm
 
 *.cache
+
+*.exe
+
+.vs/DaneZPliku/v16/.suo
+
+*.pdb

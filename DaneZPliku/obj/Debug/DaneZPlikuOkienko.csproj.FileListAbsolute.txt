@@ -25,3 +25,12 @@ C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPl
 C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPlikuOkienko.csproj.GenerateResource.cache
 C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPliku.exe
 C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPliku.pdb
+C:\Sztuczna_git\SI\SI\DaneZPliku\bin\Debug\DaneZPliku.exe.config
+C:\Sztuczna_git\SI\SI\DaneZPliku\bin\Debug\DaneZPliku.exe
+C:\Sztuczna_git\SI\SI\DaneZPliku\bin\Debug\DaneZPliku.pdb
+C:\Sztuczna_git\SI\SI\DaneZPliku\obj\Debug\DaneZPlikuOkienko.csprojAssemblyReference.cache
+C:\Sztuczna_git\SI\SI\DaneZPliku\obj\Debug\DaneZPlikuOkienko.DaneZPliku.resources
+C:\Sztuczna_git\SI\SI\DaneZPliku\obj\Debug\DaneZPliku.Properties.Resources.resources
+C:\Sztuczna_git\SI\SI\DaneZPliku\obj\Debug\DaneZPlikuOkienko.csproj.GenerateResource.cache
+C:\Sztuczna_git\SI\SI\DaneZPliku\obj\Debug\DaneZPliku.exe
+C:\Sztuczna_git\SI\SI\DaneZPliku\obj\Debug\DaneZPliku.pdb

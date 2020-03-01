@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace DaneZPlikuOkienko
 {
@@ -259,18 +260,45 @@ namespace DaneZPlikuOkienko
             }
 
             MessageBox.Show(wynik_3e, "Zadanie 3e");
+            //Zadanie 3f
+            //Liczenie średniej
             List<double>srednia=new List<double>();
             for (int i = 0; i < indeksy_kolumn.Count; i++)
             {
                 double liczba = 0;
-                int ile = dane.Length / dane[0].Length-1;
+                int ile = dane.Length;
                 for (int j = 0; j < dane.Length; j++)
                 {
                     liczba += StringToDouble(dane[j][indeksy_kolumn[i]]);
                 }
                 srednia.Add(liczba/ile);
             }
+            //liczenie wariancji
+            List<double>wariancja=new List<double>();
+            for (int i = 0; i < indeksy_kolumn.Count; i++)
+            {
+                int ile = dane.Length;
+                double gora = 0;
+                for (int j = 0; j < dane.Length; j++)
+                {
+                    gora += Math.Pow((StringToDouble(dane[j][indeksy_kolumn[i]]) - srednia[i]),2);
+                }
 
+                double wyn = gora / dane.Length;
+                wariancja.Add(wyn);
+            }
+
+            string wynik_3f = "";
+            for (int i = 0; i < wariancja.Count; i++)
+            {
+                wynik_3f += "Kolumna " + indeksy_kolumn[i] + ": Odchylenie: " + Math.Sqrt(wariancja[i]) + "\n";
+            }
+
+            MessageBox.Show(wynik_3f, "Zadanie 3f");
+            for (int i = 0; i < srednia.Count; i++)
+            {
+                Debug.Print(srednia[i].ToString());
+            }
             /****************** Koniec miejsca na rozwiązanie ********************************/
         }
     }
