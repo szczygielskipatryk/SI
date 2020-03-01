@@ -1,0 +1,12 @@
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuConsole\DaneZPlikuConsole\bin\Debug\DaneZPlikuConsole.exe.config
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuConsole\DaneZPlikuConsole\bin\Debug\DaneZPlikuConsole.exe
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuConsole\DaneZPlikuConsole\bin\Debug\DaneZPlikuConsole.pdb
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuConsole\DaneZPlikuConsole\obj\Debug\DaneZPlikuConsole.csprojResolveAssemblyReference.cache
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuConsole\DaneZPlikuConsole\obj\Debug\DaneZPlikuConsole.exe
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuConsole\DaneZPlikuConsole\obj\Debug\DaneZPlikuConsole.pdb
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuConsole\DaneZPlikuConsole\bin\Debug\DaneZPlikuConsole.exe.config
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuConsole\DaneZPlikuConsole\bin\Debug\DaneZPlikuConsole.exe
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuConsole\DaneZPlikuConsole\bin\Debug\DaneZPlikuConsole.pdb
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuConsole\DaneZPlikuConsole\obj\Debug\DaneZPlikuConsole.csprojAssemblyReference.cache
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuConsole\DaneZPlikuConsole\obj\Debug\DaneZPlikuConsole.exe
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuConsole\DaneZPlikuConsole\obj\Debug\DaneZPlikuConsole.pdb
