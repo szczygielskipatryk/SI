@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DaneZPlikuConsole")]
+[assembly: AssemblyTitle("DaneZPliku")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DaneZPlikuConsole")]
+[assembly: AssemblyProduct("DaneZPliku")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d50a1187-6f1c-411b-ad75-363dbf659c5c")]
+[assembly: Guid("24f5607f-1be8-4f84-a112-2c4c34a8a750")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,0 +1,27 @@
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPliku\DaneZPliku\bin\Debug\DaneZPliku.exe.config
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPliku\DaneZPliku\obj\Debug\DaneZPliku.exe
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPliku\DaneZPliku\obj\Debug\DaneZPliku.pdb
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPliku\DaneZPliku\bin\Debug\DaneZPliku.exe
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPliku\DaneZPliku\bin\Debug\DaneZPliku.pdb
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPliku\DaneZPliku\obj\Debug\DaneZPlikuOkienko.csprojResolveAssemblyReference.cache
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPliku\DaneZPliku\obj\Debug\DaneZPlikuOkienko.DaneZPliku.resources
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPliku\DaneZPliku\obj\Debug\DaneZPliku.Properties.Resources.resources
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPliku\DaneZPliku\obj\Debug\DaneZPlikuOkienko.csproj.GenerateResource.Cache
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuOkienko\DaneZPliku\bin\Debug\DaneZPliku.exe.config
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPliku.exe
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPliku.pdb
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuOkienko\DaneZPliku\bin\Debug\DaneZPliku.exe
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuOkienko\DaneZPliku\bin\Debug\DaneZPliku.pdb
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPlikuOkienko.csprojResolveAssemblyReference.cache
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPlikuOkienko.DaneZPliku.resources
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPliku.Properties.Resources.resources
+C:\Users\JacekL\Documents\Visual Studio 2015\Projects\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPlikuOkienko.csproj.GenerateResource.Cache
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\bin\Debug\DaneZPliku.exe.config
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\bin\Debug\DaneZPliku.exe
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\bin\Debug\DaneZPliku.pdb
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPlikuOkienko.csprojAssemblyReference.cache
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPlikuOkienko.DaneZPliku.resources
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPliku.Properties.Resources.resources
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPlikuOkienko.csproj.GenerateResource.cache
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPliku.exe
+C:\Users\Szczygiel\Desktop\SztucznaInteligencja\zadanie 1\starter-Csharp\DaneZPlikuOkienko\DaneZPliku\obj\Debug\DaneZPliku.pdb
