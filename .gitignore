@@ -1,0 +1,8 @@
+
+DaneZPlikuConsole/obj/Debug/
+
+*.ide-wal
+
+*.ide-shm
+
+*.cache
