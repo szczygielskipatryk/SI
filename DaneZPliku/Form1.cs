@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 using System.Diagnostics;
+using System.Linq.Expressions;
+using System.Windows.Forms;
 
 namespace DaneZPlikuOkienko
 {
@@ -209,45 +210,48 @@ namespace DaneZPlikuOkienko
             //Zadanie 3d i 3e
             List<int>wyniki_unikal=new List<int>();
             List<string>unikalne=new List<string>();
-            List<List<double>>unik_wartosci=new List<List<double>>();
+            List<List<string>>unik_wartosci=new List<List<string>>();
 
             //Debug.Print(dane.Length.ToString());
-            for (int i = 0; i < dane[0].Length; i++)
-            {
-                for (int j = 0; j < dane.Length; j++)
-                {
-                    if (unikalne.Contains(dane[j][i]))
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        unikalne.Add(dane[j][i]);
-                    }
-                }
-                wyniki_unikal.Add(unikalne.Count);
-                List<double>c=new List<double>();
-                for (int x = 0; x < unikalne.Count; x++)
-                {
-                    double zmiana = StringToDouble(unikalne[x]);
-                    c.Add(zmiana);
-                }
-                c.Sort();
-                unik_wartosci.Add(c);
-                unikalne.Clear();
-            }
-
             string wynik_3d = "";
-            for (int i = 0; i < wyniki_unikal.Count - 1; i++)
+            try
             {
-                int c = i + 1;
-                wynik_3d += "Ilosc unikalnych dla kolumny: " +c + " : " + wyniki_unikal[i] + "\n";
+                for (int i = 0; i < dane[0].Length; i++)
+                {
+                    for (int j = 0; j < dane.Length; j++)
+                    {
+                        if (unikalne.Contains(dane[j][i]))
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            unikalne.Add(dane[j][i]);
+                        }
+                    }
+
+                    wyniki_unikal.Add(unikalne.Count);
+                    List<string>c=new List<string>(unikalne);
+                    unik_wartosci.Add(c);
+                    unikalne.Clear();
+                }
+
+                
+                for (int i = 0; i < wyniki_unikal.Count - 1; i++)
+                {
+                    int c = i + 1;
+                    wynik_3d += "Ilosc unikalnych dla kolumny: " + c + " : " + wyniki_unikal[i] + "\n";
+                }
+            }
+            catch (Exception f)
+            {
+                wynik_3d = f.Message + "\n";
             }
 
             MessageBox.Show(wynik_3d, "zadanie 3d");
 
             string wynik_3e = "";
-            for (int i = 0; i < unik_wartosci.Count - 1; i++)
+            for (int i = 0; i < unik_wartosci.Count-1; i++)
             {
                 int kolumna = i + 1;
                 wynik_3e += "Unikalne wartości dla kolumny: " + kolumna + ": ";
@@ -262,43 +266,99 @@ namespace DaneZPlikuOkienko
             MessageBox.Show(wynik_3e, "Zadanie 3e");
             //Zadanie 3f
             //Liczenie średniej
-            List<double>srednia=new List<double>();
-            for (int i = 0; i < indeksy_kolumn.Count; i++)
-            {
-                double liczba = 0;
-                int ile = dane.Length;
-                for (int j = 0; j < dane.Length; j++)
-                {
-                    liczba += StringToDouble(dane[j][indeksy_kolumn[i]]);
-                }
-                srednia.Add(liczba/ile);
-            }
-            //liczenie wariancji
-            List<double>wariancja=new List<double>();
-            for (int i = 0; i < indeksy_kolumn.Count; i++)
-            {
-                int ile = dane.Length;
-                double gora = 0;
-                for (int j = 0; j < dane.Length; j++)
-                {
-                    gora += Math.Pow((StringToDouble(dane[j][indeksy_kolumn[i]]) - srednia[i]),2);
-                }
-
-                double wyn = gora / dane.Length;
-                wariancja.Add(wyn);
-            }
-
             string wynik_3f = "";
-            for (int i = 0; i < wariancja.Count; i++)
+            List<double>srednia=new List<double>();
+            try
             {
-                wynik_3f += "Kolumna " + indeksy_kolumn[i] + ": Odchylenie: " + Math.Sqrt(wariancja[i]) + "\n";
+                for (int i = 0; i < indeksy_kolumn.Count; i++)
+                {
+                    double liczba = 0;
+                    int ile = dane.Length;
+                    for (int j = 0; j < dane.Length; j++)
+                    {
+                        liczba += StringToDouble(dane[j][indeksy_kolumn[i]]);
+                    }
+
+                    srednia.Add(liczba / ile);
+                }
+
+
+                //liczenie wariancji
+                List<double> wariancja = new List<double>();
+                for (int i = 0; i < indeksy_kolumn.Count; i++)
+                {
+                    int ile = dane.Length;
+                    double gora = 0;
+                    for (int j = 0; j < dane.Length; j++)
+                    {
+                        gora += Math.Pow((StringToDouble(dane[j][indeksy_kolumn[i]]) - srednia[i]), 2);
+                    }
+
+                    double wyn = gora / dane.Length;
+                    wariancja.Add(wyn);
+                }
+
+
+                for (int i = 0; i < wariancja.Count; i++)
+                {
+                    wynik_3f += "Kolumna " + indeksy_kolumn[i] + ": Odchylenie: " + Math.Sqrt(wariancja[i]) + "\n";
+                }
+            }
+            catch (Exception w)
+            {
+                wynik_3f = "Nie udało się skonwertować atrybutów do double" + "\n";
             }
 
-            MessageBox.Show(wynik_3f, "Zadanie 3f");
-            for (int i = 0; i < srednia.Count; i++)
+            //wariancja z klas decyzyjnych
+            List<double> decyz_zmiana = new List<double>();
+            string wynik_decyzyjne="";
+            try
             {
-                Debug.Print(srednia[i].ToString());
+                for (int i = 0; i < dane.Length; i++)
+                {
+                    double liczba = 0;
+                    bool czyUdane = double.TryParse(dane[i][dane[i].Length - 1], out liczba);
+                    if (czyUdane)
+                    {
+                        decyz_zmiana.Add(liczba);
+                    }
+                    else
+                    {
+                        wynik_decyzyjne = "Nie udało się skonwertować klas decyzyjnych";
+                       
+                    }
+                }
+                
+                if (decyz_zmiana.Count != 0)
+                {
+                    double suma_dec = 0;
+                    double sred = 0;
+                    for (int i = 0; i < decyz_zmiana.Count; i++)
+                    {
+                        suma_dec += decyz_zmiana[i];
+                    }
+
+                    sred = suma_dec / decyz_zmiana.Count;
+                    double gora_wariancja = 0;
+                    double warian = 0;
+                    for (int i = 0; i < decyz_zmiana.Count; i++)
+                    {
+                        gora_wariancja += Math.Pow((decyz_zmiana[i] - sred), 2);
+                    }
+
+                    warian = gora_wariancja / decyz_zmiana.Count;
+                    wynik_decyzyjne = "Odchylenie dla klas decyzyjnych: " + Math.Sqrt(warian) + "\n";
+
+                }
             }
+            catch (Exception t)
+            {
+                wynik_decyzyjne = "Nie udało się skonwertować klas decyzyjnych";
+            }
+            wynik_3f += wynik_decyzyjne;
+            MessageBox.Show(wynik_3f, "Zadanie 3f");
+
+            
             /****************** Koniec miejsca na rozwiązanie ********************************/
         }
     }
