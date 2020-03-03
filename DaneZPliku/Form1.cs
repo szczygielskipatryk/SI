@@ -122,11 +122,7 @@ namespace DaneZPlikuOkienko
             List<string> klasy_decyzyjne = new List<string>();
             for (int i = 0; i < dane.Length; i++)
             {
-                if (klasy_decyzyjne.Contains(dane[i][dane[i].Length - 1]))
-                {
-                    continue;
-                }
-                else
+                if (!klasy_decyzyjne.Contains(dane[i][dane[i].Length - 1]))
                 {
                     klasy_decyzyjne.Add(dane[i][dane[i].Length - 1]);
                 }
@@ -198,11 +194,18 @@ namespace DaneZPlikuOkienko
             }
 
             string wynik_3c = "";
-            for (int i = 0; i < indeksy_kolumn.Count; i++)
+            if (indeksy_kolumn.Count == 0)
             {
-                int kolumna_ind = indeksy_kolumn[i] + 1;
-                wynik_3c += "Kolumna " + kolumna_ind+ ": maks: " + maks[i] + " min: " + min[i]+"\n";
+                wynik_3c = "Zestaw danych nie posiada kolumn numerycznych";
+            }
+            else
+            {
+                for (int i = 0; i < indeksy_kolumn.Count; i++)
+                {
+                    int kolumna_ind = indeksy_kolumn[i] + 1;
+                    wynik_3c += "Kolumna " + kolumna_ind + ": maks: " + maks[i] + " min: " + min[i] + "\n";
 
+                }
             }
 
             MessageBox.Show(wynik_3c,"zadanie 3c");
