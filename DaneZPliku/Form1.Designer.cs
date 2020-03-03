@@ -48,9 +48,10 @@
             // btnWybierzPlikSystemu
             // 
             this.btnWybierzPlikSystemu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnWybierzPlikSystemu.Location = new System.Drawing.Point(702, 12);
+            this.btnWybierzPlikSystemu.Location = new System.Drawing.Point(580, 10);
+            this.btnWybierzPlikSystemu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWybierzPlikSystemu.Name = "btnWybierzPlikSystemu";
-            this.btnWybierzPlikSystemu.Size = new System.Drawing.Size(42, 23);
+            this.btnWybierzPlikSystemu.Size = new System.Drawing.Size(32, 19);
             this.btnWybierzPlikSystemu.TabIndex = 0;
             this.btnWybierzPlikSystemu.Text = "...";
             this.btnWybierzPlikSystemu.UseVisualStyleBackColor = true;
@@ -60,19 +61,21 @@
             // 
             this.tbSciezkaDoPlikuSystemu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSciezkaDoPlikuSystemu.Location = new System.Drawing.Point(193, 12);
+            this.tbSciezkaDoPlikuSystemu.Location = new System.Drawing.Point(145, 10);
+            this.tbSciezkaDoPlikuSystemu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbSciezkaDoPlikuSystemu.Name = "tbSciezkaDoPlikuSystemu";
             this.tbSciezkaDoPlikuSystemu.ReadOnly = true;
-            this.tbSciezkaDoPlikuSystemu.Size = new System.Drawing.Size(503, 22);
+            this.tbSciezkaDoPlikuSystemu.Size = new System.Drawing.Size(432, 20);
             this.tbSciezkaDoPlikuSystemu.TabIndex = 1;
             this.tbSciezkaDoPlikuSystemu.Click += new System.EventHandler(this.btnWybierzPlik_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Location = new System.Drawing.Point(9, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 17);
+            this.label1.Size = new System.Drawing.Size(126, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ścieżka do pliku systemu";
             // 
@@ -80,17 +83,19 @@
             // 
             this.tbWynik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbWynik.Location = new System.Drawing.Point(0, 0);
+            this.tbWynik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbWynik.Multiline = true;
             this.tbWynik.Name = "tbWynik";
-            this.tbWynik.Size = new System.Drawing.Size(364, 309);
+            this.tbWynik.Size = new System.Drawing.Size(300, 251);
             this.tbWynik.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 47);
+            this.label2.Location = new System.Drawing.Point(9, 38);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 17);
+            this.label2.Size = new System.Drawing.Size(126, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Ścieżka do pliku z typami";
             // 
@@ -98,18 +103,20 @@
             // 
             this.tbSciezkaDoPlikuZTypami.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSciezkaDoPlikuZTypami.Location = new System.Drawing.Point(193, 44);
+            this.tbSciezkaDoPlikuZTypami.Location = new System.Drawing.Point(145, 36);
+            this.tbSciezkaDoPlikuZTypami.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbSciezkaDoPlikuZTypami.Name = "tbSciezkaDoPlikuZTypami";
             this.tbSciezkaDoPlikuZTypami.ReadOnly = true;
-            this.tbSciezkaDoPlikuZTypami.Size = new System.Drawing.Size(503, 22);
+            this.tbSciezkaDoPlikuZTypami.Size = new System.Drawing.Size(432, 20);
             this.tbSciezkaDoPlikuZTypami.TabIndex = 5;
             // 
             // btnWybierzPlikZTypami
             // 
             this.btnWybierzPlikZTypami.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnWybierzPlikZTypami.Location = new System.Drawing.Point(702, 44);
+            this.btnWybierzPlikZTypami.Location = new System.Drawing.Point(580, 36);
+            this.btnWybierzPlikZTypami.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWybierzPlikZTypami.Name = "btnWybierzPlikZTypami";
-            this.btnWybierzPlikZTypami.Size = new System.Drawing.Size(42, 23);
+            this.btnWybierzPlikZTypami.Size = new System.Drawing.Size(32, 19);
             this.btnWybierzPlikZTypami.TabIndex = 6;
             this.btnWybierzPlikZTypami.Text = "...";
             this.btnWybierzPlikZTypami.UseVisualStyleBackColor = true;
@@ -119,9 +126,10 @@
             // 
             this.tbAtrType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbAtrType.Location = new System.Drawing.Point(0, 0);
+            this.tbAtrType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbAtrType.Multiline = true;
             this.tbAtrType.Name = "tbAtrType";
-            this.tbAtrType.Size = new System.Drawing.Size(361, 309);
+            this.tbAtrType.Size = new System.Drawing.Size(298, 251);
             this.tbAtrType.TabIndex = 7;
             // 
             // splitContainer1
@@ -129,7 +137,8 @@
             this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.Location = new System.Drawing.Point(15, 88);
+            this.splitContainer1.Location = new System.Drawing.Point(11, 72);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -139,16 +148,18 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tbAtrType);
-            this.splitContainer1.Size = new System.Drawing.Size(729, 309);
-            this.splitContainer1.SplitterDistance = 364;
+            this.splitContainer1.Size = new System.Drawing.Size(601, 251);
+            this.splitContainer1.SplitterDistance = 300;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 8;
             // 
             // btnStart
             // 
             this.btnStart.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnStart.Location = new System.Drawing.Point(308, 403);
+            this.btnStart.Location = new System.Drawing.Point(258, 327);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(139, 43);
+            this.btnStart.Size = new System.Drawing.Size(104, 35);
             this.btnStart.TabIndex = 9;
             this.btnStart.Text = "Pracuj";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -156,9 +167,9 @@
             // 
             // DaneZPliku
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 458);
+            this.ClientSize = new System.Drawing.Size(621, 375);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnWybierzPlikZTypami);
             this.Controls.Add(this.tbSciezkaDoPlikuZTypami);
@@ -167,7 +178,8 @@
             this.Controls.Add(this.tbSciezkaDoPlikuSystemu);
             this.Controls.Add(this.btnWybierzPlikSystemu);
             this.Controls.Add(this.splitContainer1);
-            this.MinimumSize = new System.Drawing.Size(700, 500);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(529, 414);
             this.Name = "DaneZPliku";
             this.Text = "Dane z pliku";
             this.splitContainer1.Panel1.ResumeLayout(false);

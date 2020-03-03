@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq.Expressions;
 using System.Windows.Forms;
+using System.IO;
+using System.Text;
+using Random = System.Random;
 
 namespace DaneZPlikuOkienko
 {
@@ -172,28 +175,38 @@ namespace DaneZPlikuOkienko
                     indeksy_kolumn.Add(i);
                 }
             }
-            Double mini = 0, max = 0;
-            for (int i = 0; i < indeksy_kolumn.Count; i++)
+            string wynik_3c = "";
+            try
             {
-                mini = StringToDouble(dane[0][indeksy_kolumn[i]]);
-                max = StringToDouble(dane[0][indeksy_kolumn[i]]);
-                for (int j = 0; j < dane.Length; j++)
+                Double mini = 0, max = 0;
+                for (int i = 0; i < indeksy_kolumn.Count; i++)
                 {
-                    Double aktualna = StringToDouble(dane[j][indeksy_kolumn[i]]);
-                    if (aktualna < mini)
+                    mini = StringToDouble(dane[0][indeksy_kolumn[i]]);
+                    max = StringToDouble(dane[0][indeksy_kolumn[i]]);
+                    for (int j = 0; j < dane.Length; j++)
                     {
-                        mini = aktualna;
+                        Double aktualna = StringToDouble(dane[j][indeksy_kolumn[i]]);
+                        if (aktualna < mini)
+                        {
+                            mini = aktualna;
+                        }
+
+                        if (aktualna > max)
+                        {
+                            max = aktualna;
+                        }
                     }
-                    if (aktualna > max)
-                    {
-                        max = aktualna;
-                    }
+
+                    min.Add(mini);
+                    maks.Add(max);
                 }
-                min.Add(mini);
-                maks.Add(max);
+            }
+            catch (Exception)
+            {
+                wynik_3c = "Nie udało się przekonwertować liczb na Double";
             }
 
-            string wynik_3c = "";
+            
             if (indeksy_kolumn.Count == 0)
             {
                 wynik_3c = "Zestaw danych nie posiada kolumn numerycznych";
@@ -360,8 +373,50 @@ namespace DaneZPlikuOkienko
             }
             wynik_3f += wynik_decyzyjne;
             MessageBox.Show(wynik_3f, "Zadanie 3f");
-
+            //Zadanie 4.a
+            List<List<string>>po_zmianie=new List<List<string>>();
             
+            for (int i = 0; i < dane.Length; i++)
+            {
+                List<string> kol = new List<string>();
+                for (int j = 0; j < dane[i].Length; j++)
+                {
+                    kol.Add(dane[i][j]);
+                }
+                List<string>backup=new List<string>(kol);
+                po_zmianie.Add(backup);
+                kol.Clear();
+            }
+            int ile_wartosci_ogolem = dane.Length;
+            double procent = 0.1* ile_wartosci_ogolem;
+            int proc = (int) procent;
+            Random rand=new Random();
+            for (int i = 0; i < dane[0].Length-1; i++)
+            {
+                int randomowy = rand.Next(0, ile_wartosci_ogolem - 1);
+                for (int j = 0; j <proc; j++)
+                {
+                    if (po_zmianie[randomowy][i].Equals("?"))
+                    {
+                        randomowy = rand.Next(0, ile_wartosci_ogolem);
+                    }
+
+                    po_zmianie[randomowy][i] = "?";
+                }
+            }
+
+            string test = "";
+            for (int i = 0; i < dane.Length; i++)
+            {
+                for (int j = 0; j < dane[0].Length; j++)
+                {
+                    test+=po_zmianie[i][j]+" ";
+                }
+                test+="\n";
+            }
+
+            Console.Write(test);
+
             /****************** Koniec miejsca na rozwiązanie ********************************/
         }
     }
